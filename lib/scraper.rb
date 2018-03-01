@@ -30,7 +30,7 @@ class Scraper
 
   def make_courses
       self.get_courses.each do |course|
-          binding.pry
+          #binding.pry
 
           course = Course.new
           #binding.pry
