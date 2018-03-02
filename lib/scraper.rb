@@ -32,7 +32,7 @@ class Scraper
           #binding.pry
           self.get_courses.each do |course|
           #binding.pry
-          course = Course.new
+          puts course = Course.new
           #binding.pry
       end
   end
