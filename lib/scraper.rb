@@ -15,7 +15,7 @@ class Scraper
       end
 
     def get_courses
-        self.get_page.css(".post h2") #or #".post".text
+        self.get_page.css(".post h2").text #or #".post".text
     end
 
     def make_courses
