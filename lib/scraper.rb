@@ -26,7 +26,7 @@ class Scraper
              course.title = course.css("h2").text
              course.schedule = course.css("date").text
              course.description = course.css("p").text
-             #binding.pry
+             binding.pry
         end
         #binding.pry
     end
