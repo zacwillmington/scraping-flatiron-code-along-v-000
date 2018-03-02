@@ -29,7 +29,8 @@ class Scraper
   end
 
   def make_courses
-          #binding.pry
+          binding.pry
+          
           self.get_courses.each do |course|
           #binding.pry
           puts course = Course.new
