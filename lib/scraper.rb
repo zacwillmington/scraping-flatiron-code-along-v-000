@@ -20,9 +20,10 @@ class Scraper
 
     def make_courses
             #binding.pry
-            get_courses.each do |course|
+            get_courses.each do |cour|
             #binding.pry
-              course = Course.new
+             cour = Course.new
+             
              course.title = course.css("h2").text
              course.schedule = course.css("date").text
              course.description = course.css("p").text
