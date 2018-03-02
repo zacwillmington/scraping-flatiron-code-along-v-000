@@ -6,7 +6,7 @@ require_relative './course.rb'
 
 class Scraper
 
-    reader_accessor :get_page, :get_courses, :make_courses, :print_courses
+     attr_reader :get_page, :get_courses, :make_courses, :print_courses
 
     def get_page
         html = open("http://learn-co-curriculum.github.io/site-for-scraping/courses")
