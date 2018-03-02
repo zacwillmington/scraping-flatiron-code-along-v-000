@@ -23,9 +23,9 @@ class Scraper
             get_courses.each do |course|
             #binding.pry
               course = Course.new
-             course.title = course.("h2").text
-             course.schedule = course.("date").text
-             course.description = course.("p").text
+             course.title = course.css("h2").text
+             course.schedule = course.css("date").text
+             course.description = course.css("p").text
              #binding.pry
         end
         #binding.pry
