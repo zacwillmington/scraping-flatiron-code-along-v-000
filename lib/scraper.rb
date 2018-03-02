@@ -22,7 +22,7 @@ class Scraper
             #binding.pry
             self.get_courses.each do |course|
             #binding.pry
-            #  course = Course.new
+              course = Course.new
              course.title = course.css("h2").text
 
 
