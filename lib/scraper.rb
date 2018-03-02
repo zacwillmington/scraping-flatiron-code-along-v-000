@@ -27,6 +27,7 @@ class Scraper
 
     def print_courses
     self.make_courses
+    binding.pry
     Course.all.each do |course|
       if course.title
         puts "Title: #{course.title}"
