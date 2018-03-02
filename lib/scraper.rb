@@ -25,7 +25,7 @@ class Scraper
              course = Course.new
              #binding.pry
         end
-        binding.pry
+        #binding.pry
     end
 
     def print_courses
