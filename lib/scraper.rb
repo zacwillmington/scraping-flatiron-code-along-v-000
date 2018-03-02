@@ -22,12 +22,12 @@ class Scraper
             #binding.pry
 
             self.get_courses.each do |course|
-            binding.pry
+            #binding.pry
               course = Course.new
              course.title = course.("h2").text
              course.schedule = course.("date").text
              course.description = course.("p").text
-             binding.pry
+             #binding.pry
         end
         #binding.pry
     end
